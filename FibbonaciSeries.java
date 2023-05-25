@@ -4,9 +4,9 @@ import java.io.*;
 public class FibbonaciSeries {
     static long getFibbonaciNumber(int number) {
 
-        int first = 0; 
-     int second = 1; 
-     int next ; 
+        long first = 0; 
+     long second = 1; 
+     long next =1 ; 
 
      for(int i =1; i < number ; i++){
 
@@ -14,18 +14,18 @@ next = first +second;
 
 first = second;  
 second = next;
-System.out.println(next);
      }
 
 
-return 0;
+return next;
     }
 
     public static void main(String[] args) {
         FastScanner scanner = new FastScanner(System.in);
-        int n = Integer.parseInt(scanner.next());
+       
      
   System.out.println("enter number");
+  int n = Integer.parseInt(scanner.next());
         System.out.println(getFibbonaciNumber(n));
     }
 
