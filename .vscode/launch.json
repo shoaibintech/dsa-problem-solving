@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HugeFibbonaciNumber",
+      "request": "launch",
+      "mainClass": "HugeFibbonaciNumber",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "GetLastDigitOfFibbonaciNumber",
+      "request": "launch",
+      "mainClass": "GetLastDigitOfFibbonaciNumber",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
       "name": "FibbonaciSeries",
       "request": "launch",
       "mainClass": "FibbonaciSeries",
