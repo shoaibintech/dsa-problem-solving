@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FibonacciLastDigit",
+      "request": "launch",
+      "mainClass": "FibonacciLastDigit",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
       "name": "HugeFibbonaciNumber",
       "request": "launch",
       "mainClass": "HugeFibbonaciNumber",
