@@ -1,6 +1,8 @@
 function gcd(a, b) {
 
 
+
+
     if (b == 0) {
         return a;
     }
@@ -13,5 +15,13 @@ function gcd(a, b) {
 
 }
 
+function lcm(a, b) {
 
-console.log("gcd", gcd(3918848, 1653264))
+    return (a * b) / gcd(a, b)
+
+
+
+}
+
+
+console.log("gcd", lcm(75, 15))

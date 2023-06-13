@@ -1,18 +1,4 @@
-// by Alexander Nikolskiy
 
-const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    terminal: false
-});
-
-process.stdin.setEncoding('utf8');
-rl.on('line', readLine);
-var mem = {}
-function readLine(line) {
-    console.log(fib(parseInt(line, 10), mem));
-    process.exit();
-}
 
 function fib(n, mem) {
 
@@ -21,13 +7,15 @@ function fib(n, mem) {
     if (n <= 0) {
         return null;
     } else if (n === 1) {
-        return BigInt(0);
+
+        return 0;
     } else if (n === 2) {
-        return BigInt(1);
+        return 1;
     } else if (n in mem) {
         return mem[n];
     }
-    var result = fibonacci(n - 1, mem) + fibonacci(n - 2, mem);
+    var result = fib(n - 1, mem) + fib(n - 2, mem);
+
     mem[n] = result;
 
 
@@ -35,4 +23,9 @@ function fib(n, mem) {
 
 }
 
-module.exports = fib;
+var mem = {}
+console.log("hellos enter number")
+console.log(fib(23, mem))
+
+
+

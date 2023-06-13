@@ -1,19 +1,35 @@
 import java.util.*;
 
 public class LCM {
-  private static long lcm_naive(int a, int b) {
-    for (long l = 1; l <= (long) a * b; ++l)
-      if (l % a == 0 && l % b == 0)
-        return l;
 
-    return (long) a * b;
+  private static long gcd(int a , int b){
+
+    if(b == 0){
+      return a;
+    }
+
+   int aprime = a % b ;
+
+   return gcd(b,aprime);
+
+  }
+  private static long lcm_naive(int a, int b) {
+   
+
+    
+
+return (a*b )/ gcd(a,b);
+
+
+
   }
 
   public static void main(String args[]) {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("enter 2 numbers to get lcm");
     int a = scanner.nextInt();
     int b = scanner.nextInt();
-
-    System.out.println(lcm_naive(a, b));
+long x = lcm_naive(a, b);
+    System.out.println("ima x"+x);
   }
 }

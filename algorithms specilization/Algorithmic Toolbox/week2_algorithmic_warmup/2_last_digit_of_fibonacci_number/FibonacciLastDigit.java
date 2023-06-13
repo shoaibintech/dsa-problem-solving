@@ -1,6 +1,5 @@
 
 import java.util.*;
-import java.io.*;
 import java.math.BigInteger;
 
 public class FibonacciLastDigit {
@@ -31,10 +30,11 @@ return second;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
        
-        System.out.println("Last digit of nth fibbonci number");
-     System.out.println("enter number hjk to get ");
-     int n = scanner.nextInt();
-           System.out.println(getLastDigitOfFibbonaciNumber(n));
+   System.out.println("Last digit of nth fibbonci number");
+   System.out.println("enter number  to get ");
+   int n = scanner.nextInt();
+   System.out.println(getLastDigitOfFibbonaciNumber(n));
+   //scanner.close();
      
     }
 
