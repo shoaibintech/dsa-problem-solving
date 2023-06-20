@@ -4,6 +4,7 @@ function twoSum(array, target) {
 
     var lookup = {};
     var result = [];
+
     var i;
 
     for (i = 0; i < array.length; i++) {
@@ -24,6 +25,6 @@ function twoSum(array, target) {
 }
 
 
-const array = [1, 5, 8, 2, 4, 7, 3];
+const array = [1, 5, 1, 8, 2, 4, 7, 3];
 
-console.log(twoSum(array, 5))
+console.log(twoSum(array, 6))

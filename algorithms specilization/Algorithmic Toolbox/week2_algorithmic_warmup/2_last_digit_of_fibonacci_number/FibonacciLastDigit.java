@@ -1,44 +1,66 @@
-
 import java.util.*;
-import java.math.BigInteger;
 
 public class FibonacciLastDigit {
-    static BigInteger getLastDigitOfFibbonaciNumber(int number) {
 
-        BigInteger first = BigInteger.ZERO;
-        BigInteger second = BigInteger.ONE;
-        BigInteger next = BigInteger.ZERO;
-        BigInteger ten = BigInteger.TEN;
-     
-     if(number == 0){
-        return first;
-     }else if (number ==1 ){
-return second;
-     } else{
-        
-     for(int i =2; i <= number ; ++i){
+    public static long pisano(long m){
+	
+long prev = 0; 
+long current =1 ;
+long result = 0 ;
 
-        next = first.add(second); 
-        
-        first = second;  
-        second = next;
-             }
-     }
-     return next.mod(ten);
+
+for (int i = 0; i < m*m; i++) {
+    
+    long temp  = 0 ;
+    temp = current;
+    current = ( prev + current ) % m ;
+    prev = temp;
+
+    if(prev== 0 && current == 1 ){
+        result = i+1;
     }
-  
+ 
+}
+
+    return result;
+}
+
+    private static long getFibonacciHugeNaive(long n) {
+
+        long p = 60;
+        n = n % p;
+
+        if (n <= 1)
+            return n;
+
+        long previous = 0;
+        long current  = 1;
+
+        for (long i = 0; i < n - 1; i++) {
+
+            
+            long tmp_previous = previous;
+            previous = current;
+            current = (tmp_previous + current) ;
+        }
+
+        return current % 10;
+    }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-       
-   System.out.println("Last digit of nth fibbonci number");
-   System.out.println("enter number  to get ");
-   int n = scanner.nextInt();
-   System.out.println(getLastDigitOfFibbonaciNumber(n));
-   //scanner.close();
-     
+        long n = scanner.nextLong();
+        System.out.println(getFibonacciHugeNaive(n));
     }
-
-    
-   
 }
+
+
+// Java program to calculate
+// Fibonacci no. modulo m using
+// Pisano Period
+
+
+// Calculate Fn mod m
+
+
 

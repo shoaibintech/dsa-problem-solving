@@ -1,19 +1,4 @@
-function gcd(a, b) {
 
-
-
-
-    if (b == 0) {
-        return a;
-    }
-
-    var aprime = a % b;
-
-    return gcd(b, aprime)
-
-
-
-}
 
 function lcm(a, b) {
 

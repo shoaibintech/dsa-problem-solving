@@ -32,7 +32,6 @@ return next;
         FastScanner scanner = new FastScanner(System.in);
        
      
-  System.out.println("enter numbers");
   int n = Integer.parseInt(scanner.next());
         System.out.println(getFibbonaciNumber(n));
     }

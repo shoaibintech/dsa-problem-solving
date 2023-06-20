@@ -1,0 +1,43 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "FibonacciLastDigit",
+      "request": "launch",
+      "mainClass": "FibonacciLastDigit",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "FibbonaciSeries",
+      "request": "launch",
+      "mainClass": "FibbonaciSeries",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "FibonacciHuge",
+      "request": "launch",
+      "mainClass": "FibonacciHuge",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "LCM",
+      "request": "launch",
+      "mainClass": "LCM",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "FibonacciSumLastDigit",
+      "request": "launch",
+      "mainClass": "FibonacciSumLastDigit",
+      "projectName": "dsa-problem-solving_6a77c461"
+    }
+  ]
+}

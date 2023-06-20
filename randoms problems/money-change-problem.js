@@ -8,27 +8,28 @@ const changeProblem = (amount) => {
 
 
 
-  console.log("change:", reminder)
   while (reminder != 0) {
 
-    if (reminder >= notes[i] && reminder % notes[i] > 0) {
+    if (reminder >= notes[i] && reminder % notes[i] >= 0) {
 
       change.push({
         note: notes[i],
         quantity: parseInt(reminder / notes[i]),
       })
-      reminder = reminder % notes[i]
 
-
-      i++;
 
     }
 
+    reminder = reminder % notes[i]
+
+
+    i++;
+
   }
 
-  return change
+  return change;
 
 }
 
 
-console.log("change :", changeProblem(9999))
+console.log("change :", changeProblem(80))

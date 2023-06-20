@@ -25,7 +25,7 @@ function fib(n, mem) {
 
 var mem = {}
 console.log("hellos enter number")
-console.log(fib(23, mem))
+console.log(fib(7788, mem))
 
 
 
