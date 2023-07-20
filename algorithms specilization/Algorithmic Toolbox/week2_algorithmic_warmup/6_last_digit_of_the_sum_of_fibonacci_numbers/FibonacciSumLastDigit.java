@@ -9,6 +9,8 @@ long current =1 ;
 long result = 0 ;
 
 
+
+
 for (int i = 0; i < m*m; i++) {
     
     long temp  = 0 ;

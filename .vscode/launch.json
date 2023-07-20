@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FractionalKnapsack",
+      "request": "launch",
+      "mainClass": "FractionalKnapsack",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
+      "name": "Change",
+      "request": "launch",
+      "mainClass": "Change",
+      "projectName": "dsa-problem-solving_6a77c461"
+    },
+    {
+      "type": "java",
       "name": "FibonacciLastDigit",
       "request": "launch",
       "mainClass": "FibonacciLastDigit",
